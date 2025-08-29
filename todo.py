@@ -8,12 +8,17 @@ def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
+def view_tasks():
+    for i in tasks:
+        print(i)
 
 # Step 4: Delete a task
-
+def delete_task(remove):
+    tasks.pop(remove)
 
 # Step 5: Mark task complete
-
+def mark_complete(check):
+    tasks[check]=tasks[check]+" ✅"
 
 # Step 6: Save/load tasks (extra stretch for today)
 
