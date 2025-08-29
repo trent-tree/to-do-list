@@ -11,6 +11,7 @@ def add_task(task):
 def view_tasks():
     for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
+    print("--------------")
 
 # Step 4: Delete a task
 def delete_task(remove):
@@ -18,7 +19,7 @@ def delete_task(remove):
 
 # Step 5: Mark task complete
 def mark_complete(check):
-    tasks[check]=tasks[check]+" ✅"
+    tasks[check]="✅ --- "+tasks[check]
 
 # Step 6: Save/load tasks (extra stretch for today)
 
